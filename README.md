@@ -62,7 +62,7 @@ A project to measure and display light intensity using a TSL2561 luminosity sens
   - Also connect to the GND of the PI-4000 to ensure a common ground.
 
 ### Schematic
-```
+~~~
 Arduino Nano TSL2561 PI-4000
 A5 --------------> SCL
 A4 --------------> SDA
@@ -75,7 +75,7 @@ D9 --[1kΩ]-->---+--> Analog Input (PI-4000)
 === 10µF
 |
 GND 
-```
+~~~
 ## Explanation
 
 ### TSL2561 Sensor to Arduino Nano:
