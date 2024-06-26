@@ -74,7 +74,7 @@ D9 --[1kΩ]-->---+--> Analog Input (PI-4000)
 |
 === 10µF
 |
-GND
+GND 
 ```
 ## Explanation
 
