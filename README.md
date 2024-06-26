@@ -30,38 +30,7 @@ A project to measure and display light intensity using a TSL2561 luminosity sens
   - Also connect to the GND of the PI-4000 to ensure a common ground.
 
 ### Schematic
-# Light-Intensity-Monitoring-System
 
-## Description
-A project to measure and display light intensity using a TSL2561 luminosity sensor, Arduino Nano, and Mistura PI-4000 process indicator. This system reads light levels, processes the data, and outputs a corresponding analog signal to a display for real-time monitoring.
-
-## Components
-1. GY-2561 TSL2561 Luminosity Sensor
-2. Arduino Nano
-3. Mistura PI-4000 Display
-4. 1kΩ Resistor
-5. 10µF Capacitor
-6. Connecting wires
-7. Breadboard (optional for prototyping)
-
-## Wiring Diagram
-
-### TSL2561 to Arduino Nano
-- **VCC** (sensor) to 3.3V/5V (Nano)
-- **GND** (sensor) to GND (Nano)
-- **SCL** (sensor) to A5 (Nano)
-- **SDA** (sensor) to A4 (Nano)
-
-### Low-Pass Filter for PWM to Analog Conversion
-- **Pin 9 (PWM Output)** on the Arduino Nano:
-  - Connect to one end of the 1kΩ resistor.
-  - The other end of the 1kΩ resistor connects to both the positive lead of the 10µF capacitor and the analog input of the PI-4000.
-- **Negative lead of the 10µF capacitor**:
-  - Connect to the GND of the Arduino Nano.
-- **GND of the Arduino Nano**:
-  - Also connect to the GND of the PI-4000 to ensure a common ground.
-
-### Schematic
 ![Schematic](https://github.com/SanjitSG/Light-Intensity-Monitoring-System/blob/main/schematics.PNG)
 ## Explanation
 
