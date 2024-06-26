@@ -26,7 +26,7 @@ void loop() {
     Serial.println(" lux");
 
     // Map the light intensity to an analog value (0-255 for 8-bit PWM)
-    int analogValue = map(event.light, 0, 1000, 0, 255);  // Adjust range as necessary
+    int analogValue = map(event.light, 0, 40000, 0, 255);  // Adjusted range for 0.1 to 40,000 lux
     analogWrite(9, analogValue);  // Output the analog value (PWM on pin 9)
   }
   delay(1000);
